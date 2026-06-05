@@ -4,7 +4,7 @@ export function CTA() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="relative overflow-hidden rounded-3xl bg-ink-900 px-8 py-16 text-center sm:px-16 sm:py-20">
           <div
-            className="absolute -top-40 left-1/2 h-[500px] w-[800px] -translate-x-1/2 rounded-full bg-gradient-to-br from-brand-500/40 via-violet-500/30 to-accent-400/30 blur-3xl"
+            className="absolute -top-40 left-1/2 h-[500px] w-[800px] -translate-x-1/2 rounded-full bg-gradient-to-br from-brand-500/40 via-red-500/30 to-accent-400/30 blur-3xl"
             aria-hidden="true"
           />
           <div

@@ -9,13 +9,13 @@ const steps = [
     n: "02",
     title: "GridCast builds your campaigns",
     body: "Our AI writes the ad copy, sets the proximity targeting, picks the keywords, and assigns the right budget per channel.",
-    accent: "from-violet-400 to-brand-600",
+    accent: "from-red-400 to-brand-600",
   },
   {
     n: "03",
     title: "Watch the customers come in",
     body: "Track impressions, calls, walk-ins, and AI mentions in real time. Adjust anything with a single sentence to the assistant.",
-    accent: "from-amber-400 to-rose-500",
+    accent: "from-accent-400 to-red-500",
   },
 ];
 

@@ -24,7 +24,9 @@ export function Hero() {
           <h1 className="mt-6 text-balance text-5xl font-semibold leading-[1.05] tracking-tight text-ink-900 sm:text-6xl lg:text-7xl">
             Run your business.
             <br />
-            <span className="gradient-text">Let GridCast handle the ads.</span>
+            <span className="gradient-text">
+              Let GridCast handle the ads.
+            </span>
           </h1>
 
           <p className="mx-auto mt-6 max-w-2xl text-balance text-lg leading-relaxed text-ink-600 sm:text-xl">
@@ -175,8 +177,8 @@ function DashboardMock() {
           <svg viewBox="0 0 400 120" className="mt-3 h-24 w-full">
             <defs>
               <linearGradient id="g1" x1="0" y1="0" x2="0" y2="1">
-                <stop offset="0%" stopColor="#6366f1" stopOpacity="0.25" />
-                <stop offset="100%" stopColor="#6366f1" stopOpacity="0" />
+                <stop offset="0%" stopColor="#ed1b5a" stopOpacity="0.25" />
+                <stop offset="100%" stopColor="#ed1b5a" stopOpacity="0" />
               </linearGradient>
             </defs>
             <path
@@ -185,7 +187,7 @@ function DashboardMock() {
             />
             <path
               d="M0,90 C40,80 70,70 100,60 C140,45 180,55 220,40 C260,28 300,35 340,22 L400,15"
-              stroke="#6366f1"
+              stroke="#ed1b5a"
               strokeWidth="2"
               fill="none"
             />

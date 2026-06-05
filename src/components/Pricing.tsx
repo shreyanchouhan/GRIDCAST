@@ -100,7 +100,7 @@ export function Pricing() {
               }`}
             >
               {t.highlight && (
-                <div className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-gradient-to-r from-brand-600 to-violet-600 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-white shadow">
+                <div className="absolute -top-3 left-1/2 -translate-x-1/2 rounded-full bg-gradient-to-r from-brand-600 to-red-600 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-white shadow">
                   Most popular
                 </div>
               )}

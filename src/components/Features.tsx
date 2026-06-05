@@ -135,8 +135,8 @@ function AdsMock() {
       <div className="mt-4 space-y-3">
         {[
           { name: "Weeknight specials", spend: "$4.20", reach: "1.2K", color: "from-brand-500 to-brand-700" },
-          { name: "Lunch radius", spend: "$3.10", reach: "892", color: "from-emerald-500 to-emerald-700" },
-          { name: "Weekend brunch", spend: "$5.80", reach: "2.1K", color: "from-amber-400 to-amber-600" },
+          { name: "Lunch radius", spend: "$3.10", reach: "892", color: "from-red-500 to-red-700" },
+          { name: "Weekend brunch", spend: "$5.80", reach: "2.1K", color: "from-accent-400 to-accent-600" },
         ].map((c) => (
           <div
             key={c.name}

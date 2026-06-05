@@ -5,7 +5,7 @@ const items = [
     name: "Maya R.",
     role: "Owner, Two Birds Coffee",
     initials: "MR",
-    color: "from-rose-400 to-amber-500",
+    color: "from-brand-400 to-accent-500",
   },
   {
     quote:
@@ -13,7 +13,7 @@ const items = [
     name: "Devon K.",
     role: "Studio lead, Devon's Auto",
     initials: "DK",
-    color: "from-brand-500 to-violet-600",
+    color: "from-brand-500 to-red-600",
   },
   {
     quote:
@@ -21,7 +21,7 @@ const items = [
     name: "Priya S.",
     role: "Co-founder, Halo Beauty Bar",
     initials: "PS",
-    color: "from-emerald-400 to-teal-600",
+    color: "from-accent-400 to-red-500",
   },
   {
     quote:
@@ -29,7 +29,7 @@ const items = [
     name: "Theo M.",
     role: "GM, Vine & Olive",
     initials: "TM",
-    color: "from-cyan-400 to-brand-600",
+    color: "from-red-400 to-brand-600",
   },
   {
     quote:
@@ -37,7 +37,7 @@ const items = [
     name: "Carlos D.",
     role: "Owner, Diaz Roofing",
     initials: "CD",
-    color: "from-amber-400 to-rose-500",
+    color: "from-accent-400 to-brand-500",
   },
   {
     quote:
@@ -45,7 +45,7 @@ const items = [
     name: "Lena W.",
     role: "Founder, Riverline Pilates",
     initials: "LW",
-    color: "from-violet-400 to-brand-700",
+    color: "from-red-400 to-brand-700",
   },
 ];
 
