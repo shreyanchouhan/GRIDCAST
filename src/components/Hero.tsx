@@ -1,3 +1,5 @@
+import { TypingText } from "./TypingText";
+
 export function Hero() {
   return (
     <section className="relative overflow-hidden">
@@ -24,9 +26,18 @@ export function Hero() {
           <h1 className="mt-6 text-balance text-5xl font-semibold leading-[1.05] tracking-tight text-ink-900 sm:text-6xl lg:text-7xl">
             Run your business.
             <br />
-            <span className="gradient-text">
-              Let GridCast handle the ads.
-            </span>
+            <span className="gradient-text">Let GridCast handle </span>
+            <TypingText
+              className="gradient-text"
+              phrases={[
+                "the ads.",
+                "Google Maps.",
+                "AI search.",
+                "customer calls.",
+                "weekend bookings.",
+                "the orders.",
+              ]}
+            />
           </h1>
 
           <p className="mx-auto mt-6 max-w-2xl text-balance text-lg leading-relaxed text-ink-600 sm:text-xl">
