@@ -1,54 +1,64 @@
 import Link from "next/link";
 import { Logo } from "./Logo";
 
-const links = [
-  { href: "#features", label: "Features" },
-  { href: "#how", label: "How it works" },
-  { href: "#pricing", label: "Pricing" },
-  { href: "#faq", label: "FAQ" },
+const leftLinks = [
+  { href: "#features", label: "Ads" },
+  { href: "#features", label: "AI Search" },
+  { href: "#features", label: "Voice AI" },
 ];
 
 export function Nav() {
   return (
-    <header className="sticky top-0 z-50 w-full border-b border-ink-100/80 bg-white/70 backdrop-blur-md">
-      <nav className="mx-auto flex h-16 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-        <Link href="/" className="shrink-0">
-          <Logo />
-        </Link>
-        <ul className="hidden items-center gap-8 md:flex">
-          {links.map((l) => (
-            <li key={l.href}>
+    <div className="sticky top-4 z-50 flex w-full justify-center px-4">
+      <nav
+        className="flex h-14 w-full max-w-5xl items-center justify-between gap-2 rounded-full bg-brand-600 pl-6 pr-2 shadow-xl shadow-brand-900/20 ring-1 ring-white/10"
+        aria-label="Main"
+      >
+        {/* Left links */}
+        <ul className="hidden items-center gap-6 md:flex">
+          {leftLinks.map((l) => (
+            <li key={l.label}>
               <a
                 href={l.href}
-                className="text-sm font-medium text-ink-600 transition-colors hover:text-ink-900"
+                className="text-sm font-medium text-white/90 transition-colors hover:text-white"
               >
                 {l.label}
               </a>
             </li>
           ))}
         </ul>
-        <div className="flex items-center gap-2">
+
+        {/* Centered logo */}
+        <Link
+          href="/"
+          className="absolute left-1/2 -translate-x-1/2 transition-opacity hover:opacity-90"
+          aria-label="GridCast home"
+        >
+          <Logo light />
+        </Link>
+
+        {/* Right actions */}
+        <div className="ml-auto flex items-center gap-1.5 md:ml-0">
           <a
             href="#demo"
-            className="hidden text-sm font-medium text-ink-600 hover:text-ink-900 sm:inline-block"
+            className="hidden h-10 items-center rounded-full px-4 text-sm font-medium text-white/90 transition-colors hover:bg-white/10 hover:text-white sm:inline-flex"
           >
             Book a demo
           </a>
           <a
             href="#start"
-            className="inline-flex h-9 items-center gap-1.5 rounded-full bg-ink-900 px-4 text-sm font-medium text-white shadow-sm transition-all hover:bg-ink-800 hover:shadow-md"
+            className="inline-flex h-10 items-center rounded-full bg-white px-4 text-sm font-semibold text-brand-700 shadow-sm transition-all hover:bg-brand-50"
           >
             Try GridCast free
-            <svg viewBox="0 0 20 20" fill="currentColor" className="h-3.5 w-3.5">
-              <path
-                fillRule="evenodd"
-                d="M7.21 14.77a.75.75 0 0 1 .02-1.06L10.94 10 7.23 6.29a.75.75 0 1 1 1.06-1.06l4.24 4.24a.75.75 0 0 1 0 1.06l-4.24 4.24a.75.75 0 0 1-1.08.02Z"
-                clipRule="evenodd"
-              />
-            </svg>
+          </a>
+          <a
+            href="#login"
+            className="hidden h-10 items-center rounded-full px-3 text-sm font-medium text-white/90 transition-colors hover:bg-white/10 hover:text-white sm:inline-flex"
+          >
+            Login
           </a>
         </div>
       </nav>
-    </header>
+    </div>
   );
 }

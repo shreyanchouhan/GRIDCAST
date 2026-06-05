@@ -1,11 +1,23 @@
-export function Logo({ className = "" }: { className?: string }) {
+export function Logo({
+  className = "",
+  light = false,
+}: {
+  className?: string;
+  light?: boolean;
+}) {
   return (
     <div className={`flex items-center gap-2 ${className}`}>
-      <span className="relative inline-flex h-8 w-8 items-center justify-center rounded-lg bg-gradient-to-br from-brand-600 to-brand-800 shadow-sm">
+      <span
+        className={`relative inline-flex h-8 w-8 items-center justify-center rounded-lg shadow-sm ${
+          light
+            ? "bg-white"
+            : "bg-gradient-to-br from-brand-600 to-brand-800"
+        }`}
+      >
         <svg
           viewBox="0 0 24 24"
           fill="none"
-          className="h-4 w-4 text-white"
+          className={`h-4 w-4 ${light ? "text-brand-700" : "text-white"}`}
           aria-hidden="true"
         >
           <path
@@ -23,7 +35,11 @@ export function Logo({ className = "" }: { className?: string }) {
           />
         </svg>
       </span>
-      <span className="text-[17px] font-semibold tracking-tight text-ink-900">
+      <span
+        className={`text-[17px] font-semibold tracking-tight ${
+          light ? "text-white" : "text-ink-900"
+        }`}
+      >
         GridCast
       </span>
     </div>
