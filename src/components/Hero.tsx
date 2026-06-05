@@ -31,8 +31,8 @@ export function Hero() {
 
           <p className="mx-auto mt-6 max-w-2xl text-balance text-lg leading-relaxed text-ink-600 sm:text-xl">
             An AI marketing platform that runs your ads, makes you visible to AI
-            search, and answers customer calls — at 5% the cost of a traditional
-            agency.
+            search, answers customer calls, and takes orders — at 5% the cost
+            of a traditional agency.
           </p>
 
           <div className="mt-9 flex flex-col items-center justify-center gap-3 sm:flex-row">
