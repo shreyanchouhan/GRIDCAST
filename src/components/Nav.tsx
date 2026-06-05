@@ -1,5 +1,10 @@
 import Link from "next/link";
 import { Logo } from "./Logo";
+import {
+  SignedIn,
+  SignedOut,
+  UserButton,
+} from "@clerk/nextjs";
 
 const leftLinks = [
   { href: "#features", label: "Ads" },
@@ -45,18 +50,40 @@ export function Nav() {
           >
             Book a demo
           </a>
-          <a
-            href="#start"
-            className="inline-flex h-10 items-center rounded-full bg-white px-4 text-sm font-semibold text-brand-700 shadow-sm transition-all hover:bg-brand-50"
-          >
-            Try GridCast free
-          </a>
-          <a
-            href="#login"
-            className="hidden h-10 items-center rounded-full px-3 text-sm font-medium text-white/90 transition-colors hover:bg-white/10 hover:text-white sm:inline-flex"
-          >
-            Login
-          </a>
+
+          <SignedOut>
+            <Link
+              href="/sign-up"
+              className="inline-flex h-10 items-center rounded-full bg-white px-4 text-sm font-semibold text-brand-700 shadow-sm transition-all hover:bg-brand-50"
+            >
+              Try GridCast free
+            </Link>
+            <Link
+              href="/sign-in"
+              className="hidden h-10 items-center rounded-full px-3 text-sm font-medium text-white/90 transition-colors hover:bg-white/10 hover:text-white sm:inline-flex"
+            >
+              Login
+            </Link>
+          </SignedOut>
+
+          <SignedIn>
+            <Link
+              href="/dashboard"
+              className="inline-flex h-10 items-center rounded-full bg-white px-4 text-sm font-semibold text-brand-700 shadow-sm transition-all hover:bg-brand-50"
+            >
+              Dashboard
+            </Link>
+            <div className="ml-1 mr-1">
+              <UserButton
+                appearance={{
+                  elements: {
+                    avatarBox:
+                      "h-9 w-9 ring-2 ring-white/30 hover:ring-white/60 transition",
+                  },
+                }}
+              />
+            </div>
+          </SignedIn>
         </div>
       </nav>
     </div>
