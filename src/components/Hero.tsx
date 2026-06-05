@@ -18,7 +18,7 @@ export function Hero() {
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-emerald-500 opacity-75" />
               <span className="relative inline-flex h-1.5 w-1.5 rounded-full bg-emerald-500" />
             </span>
-            Now in early access — first month free
+            Free trial — no credit card required
           </div>
 
           <h1 className="mt-6 text-balance text-5xl font-semibold leading-[1.05] tracking-tight text-ink-900 sm:text-6xl lg:text-7xl">
@@ -60,7 +60,7 @@ export function Hero() {
           </div>
 
           <p className="mt-4 text-sm text-ink-500">
-            No contract · $300 ad credit · Cancel anytime
+            No credit card required · No contract · $300 ad credit · Cancel anytime
           </p>
         </div>
 

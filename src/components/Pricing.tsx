@@ -62,7 +62,8 @@ export function Pricing() {
             Less than a phone bill. More than an agency.
           </h2>
           <p className="mt-4 text-lg text-ink-600">
-            First month free. $300 in ad credit. Cancel any time.
+            First month free. No credit card required. $300 in ad credit.
+            Cancel any time.
           </p>
 
           <div className="mt-8 inline-flex items-center gap-3 rounded-full border border-ink-200 bg-white p-1 shadow-sm">
